@@ -171,4 +171,15 @@
     border: 1px solid black;
 }
 
+.cod {
+    text-align: center;
+    width: 11%;
+}
 
+#btn_career {
+    text-align: center;
+    height: 20px;
+    width: 60px;
+    position: relative;
+    opacity: 1;
+}
