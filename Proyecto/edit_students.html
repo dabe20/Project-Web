@@ -1,0 +1,34 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Edición Estudiantes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/edit_students.css">
+</head>
+<body>
+	<form >
+		<input type="text" name="edit_name_students" placeholder="Nombre">
+		<br>
+		<input type="text" name="edit_lastname_students" placeholder="Apellidos">
+		<br>
+		<label>falta edición de foto</label>
+		<br>
+		<input type="text" name="edit_ced_students" placeholder="Cédula">
+		<br>
+		<select>
+			<option>Básico</option>
+			<option>Intermedio</option>
+			<option>Avanzado</option>
+		</select>
+		<br>
+		<label>falta edicion de cualidades/skills</label>
+		<br>
+		<label>falta edicion de proyectos desarrollados</label>
+		<br>
+		<textarea name="comments" cols="40" rows="5">Comentarios de los profesores...</textarea>
+		<input id="btn" type="button" name="save_changes" value="Guardar Cambios" onclick="location='http://localhost/proyecto/Admin_area.html'">
+		<input type="button" name="save_new" value="Guardar/Nuevo">
+		<input type="button" name="cancel" value="Cancelar" onclick="location='http://localhost/proyecto/Admin_area.html'">
+	</form>
+</body>
+</html>
