@@ -6,11 +6,11 @@
     <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link rel="stylesheet" type="text/css" href="styles/tab.css">
 </head>
-<body>
+<body bgcolor="lightblue">
 	<header>
 		<div class="msj_sign_out" align="right">
 			<label>Hola Admin</label>
-			<a href="">Salir</a>
+			<a href="http://localhost/proyecto/">Salir</a>
 		</div>
 		<img id="logo" src="UTN.jpg">
 		<br>
@@ -52,6 +52,8 @@
         <div class="content-2">
             <h4>Listado de Carreras</h4>
             <hr width="30%" align="left">
+            <input id="btn_new_career" type="button" name="new_career" value="Nuevo" 
+            onclick="location='http://localhost/proyecto/new_career.html'">
             <table id="career">
             	<tr>
             		<td class="cod">
@@ -66,9 +68,10 @@
             			<h5>ISW</h5>
             		</td>
             		<td>
-            			<p>Ingeniería en Computación</p>
-                        <input id="btn_career" type="button" name="delete" value="eliminar">
-                        <input id="btn_career" type="button" name="edit" value="editar">
+            			<label id="name_career">Ingeniería en Computación</label>
+                        <input id="btn" type="button" name="delete" value="eliminar">
+                        <input id="btn" type="button" name="edit" value="editar" 
+                        onclick="location='http://localhost/proyecto/edit_career.html'">
             		</td>
             	</tr>
             	<tr>
@@ -76,9 +79,10 @@
             			<h5>COFI</h5>
             		</td>
             		<td>
-            			<p>Contabilidad</p>
-                        <input id="btn_career" type="button" name="delete" value="eliminar">
-                        <input id="btn_career" type="button" name="edit" value="editar">
+            			<label id="name_career">Contabilidad</label>
+                        <input id="btn" type="button" name="delete" value="eliminar">
+                        <input id="btn" type="button" name="edit" value="editar" 
+                        onclick="location='http://localhost/proyecto/edit_career.html'">
             		</td>
             	</tr>
             	<tr>
@@ -86,9 +90,10 @@
             			<h5>ADM</h5>
             		</td>
             		<td>
-            			<p>Comercio Internacional</p>
-                        <input id="btn_career" type="button" name="delete" value="eliminar">
-                        <input id="btn_career" type="button" name="edit" value="editar">
+            			<label id="name_career">Comercio Internacional</label>
+                        <input id="btn" type="button" name="delete" value="eliminar">
+                        <input id="btn" type="button" name="edit" value="editar" 
+                        onclick="location='http://localhost/proyecto/edit_career.html'">
             		</td>
             	</tr>
             </table>
@@ -96,28 +101,32 @@
         <div class="content-3">
             <h4>Lista de Estudiantes</h4>
             <hr width="54%" align="left">
-            <input id="btn_new_students" type="button" name="new" value="Nuevo">
+            <input id="btn_new_students" type="button" name="new_students" value="Nuevo" 
+            onclick="location='http://localhost/proyecto/new_students.html'">
             <ul class="list_students">
                 <li>
-                    <a href="">Diego</a> Armando Bonilla Espinoza
-                    <input id="btn_career" type="button" name="delete" value="eliminar">
-                    <input id="btn_career" type="button" name="edit" value="editar" 
+                    <a href="http://localhost/proyecto/info_students.html">Diego</a> Armando Bonilla Espinoza
+                    <input id="btn" type="button" name="delete" value="eliminar">
+                    <input id="btn" type="button" name="edit" value="editar" 
                     onclick="location='http://localhost/proyecto/edit_students.html'">
                 </li>
                 <li>
-                    <a href="">Luis</a> Andrés Barahona Carvajal
-                    <input id="btn_career" type="button" name="delete" value="eliminar">
-                    <input id="btn_career" type="button" name="edit" value="editar">
+                    <a href="http://localhost/proyecto/info_students.html">Luis</a> Andrés Barahona Carvajal
+                    <input id="btn" type="button" name="delete" value="eliminar">
+                    <input id="btn" type="button" name="edit" value="editar" 
+                    onclick="location='http://localhost/proyecto/edit_students.html'">
                 </li>
                 <li>
-                    <a href="">Megan</a> Castro Barrantes
-                    <input id="btn_career" type="button" name="delete" value="eliminar">
-                    <input id="btn_career" type="button" name="edit" value="editar">
+                    <a href="http://localhost/proyecto/info_students.html">Megan</a> Castro Rojas
+                    <input id="btn" type="button" name="delete" value="eliminar">
+                    <input id="btn" type="button" name="edit" value="editar" 
+                    onclick="location='http://localhost/proyecto/edit_students.html'">
                 </li>
                 <li>
-                    <a href="">Lipney</a> Natalia Garcia Muñoz
-                    <input id="btn_career" type="button" name="delete" value="eliminar">
-                    <input id="btn_career" type="button" name="edit" value="editar">
+                    <a href="http://localhost/proyecto/info_students.html">Lipney</a> Natalia Garcia Muñoz
+                    <input id="btn" type="button" name="delete" value="eliminar">
+                    <input id="btn" type="button" name="edit" value="editar" 
+                    onclick="location='http://localhost/proyecto/edit_students.html'">
                 </li>
             </ul>
         </div>
