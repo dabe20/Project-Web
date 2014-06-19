@@ -58,13 +58,15 @@
 #btn {
     margin-left: 10px;
     text-align: center;
-    height: 20px;
-    width: 60px;
+    padding: 0; 
+    height: 19px;
+    width: 19px;
+    border-radius: 10px;
     position: relative;
     opacity: 1;
 }
 
-.list_students li {
+.list li {
     padding: 9px;
 }
 
@@ -84,6 +86,16 @@
 #btn_new_career {
     margin-bottom: 10px;
     margin-left: 78%;
+    text-align: center;
+    height: 30px;
+    width: 80px;
+    position: relative;
+    opacity: 1;
+}
+
+#btn_new_user {
+    margin-bottom: 10px;
+    margin-left: 150%;
     text-align: center;
     height: 30px;
     width: 80px;

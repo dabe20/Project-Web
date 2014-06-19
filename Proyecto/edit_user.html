@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Nuevo Usuario</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/user.css">
+</head>
+<body>
+	<form >
+		<fieldset>
+			<legend>Agregar Usuario</legend>
+			<input type="text" name="edit_name_username" placeholder="Nombre de usuario">
+			<br>
+			<input type="text" name="edit_name_user" placeholder="Nombre">
+			<br>
+			<input type="text" name="edit_ced_user" placeholder="Cédula">
+			<br>
+			<select id="new_role">
+				<option>Administrador</option>
+				<option>Director de Carrera</option>
+			</select>
+			<br>
+			<input id="btn" type="button" name="save_changes" value="Guardar Cambios" onclick="location='http://localhost/proyecto/Admin_area.html'">
+			<input type="button" name="save_new" value="Guardar/Nuevo" onclick="location='http://localhost/proyecto/new_user.html'">
+			<input type="button" name="cancel" value="Cancelar" onclick="location='http://localhost/proyecto/Admin_area.html'">
+		</fieldset>
+	</form>
+</body>
+</html>

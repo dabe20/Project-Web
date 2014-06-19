@@ -1,15 +1,10 @@
 form {
 	padding: 2%;
-	margin-left: 33%;
-	margin-top: 1%;
-	border: 1px dotted;
+	margin-left: 32%;
+	margin-top: 14%;
+	border: 1px dashed;
 	width: 30%;
 	border-radius: 12px;
-}
-
-#btn {
-	margin-top: 5%;
-	margin-left: 16%;
 }
 
 label {
@@ -17,4 +12,7 @@ label {
 	font-family: lucida handwriting;
 }
 
-
+#btn {
+	margin-top: 5%;
+	margin-left: 16%;
+}

@@ -8,8 +8,16 @@
 <body>
 	<form >
 		<fieldset>
-			<legend>Info</legend>
-			<label>falta mostrar foto</label>
+			<legend>Información de Estudiante</legend>
+			<div>
+				<canvas id="dmCanvas"></canvas>
+				<script type="text/javascript">
+	            var canvas=document.getElementById('dmCanvas');
+				var dm=canvas.getContext('2d');
+				dm.fillStyle='#00ff00';
+				dm.fillRect(0,0,80,100);
+				</script>
+			</div>
 			<br>
 			<label>Nombre: </label>
 			<label name="name_students">______________</label>
@@ -23,9 +31,30 @@
 			<label>Nivel de Inglés: </label>
 			<label name="lvl_english">________________</label>
 			<br>
-			<label>falta mostrar cualidades/skills</label>
 			<br>
-			<label>falta mostrar proyectos desarrollados</label>
+			<label id="title_prj">Proyectos desarrollados:</label>
+			<ul>
+				<label>Curso: </label>
+				<label name="curso">______________</label>
+				<br>
+				<label>Duración: </label>
+				<label name="duration">______________</label>
+				<br>
+				<label>Tecnologías usadas: </label>
+				<label name="tec_useds">______________________________________________
+				______________________________________________</label>
+				<br>
+				<label>Descripción del proyecto: </label>
+				<label name="desc_project">______________________________________________
+				______________________________________________
+				______________________________________________</label>
+				<br>
+				<label>Fecha: </label>
+				<label name="date">______________</label>
+				<br>
+				<label>Calificación: </label>
+				<label name="calification">______________</label>
+			</ul>
 			<br>
 			<textarea name="comments" cols="40" rows="5">Comentarios de los profesores...</textarea>
 			<input id="btn" type="button" name="save" value="Guardar" onclick="location='http://localhost/proyecto/Admin_area.html'">

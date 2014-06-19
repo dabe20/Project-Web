@@ -13,19 +13,41 @@
 			<br>
 			<input type="text" name="edit_lastname_students" placeholder="Apellidos">
 			<br>
-			<label>falta edición de foto</label>
+			<input type="file" size="1" name="edit_photo">
+			<div>
+				<canvas id="dmCanvas"></canvas>
+				<script type="text/javascript">
+	            var canvas=document.getElementById('dmCanvas');
+				var dm=canvas.getContext('2d');
+				dm.fillStyle='#00ff00';
+				dm.fillRect(0,0,80,100);
+				</script>
+			</div>
 			<br>
 			<input type="text" name="edit_ced_students" placeholder="Cédula">
 			<br>
-			<select>
+			<select id="edit_lvl_english">
 				<option>Básico</option>
 				<option>Intermedio</option>
 				<option>Avanzado</option>
 			</select>
 			<br>
-			<label>falta edicion de cualidades/skills</label>
+			<input type="text" name="new_skills_students" placeholder="Calidades/Skills">
 			<br>
-			<label>falta edicion de proyectos desarrollados</label>
+			<label>Proyectos desarrollados:</label>
+			<ul>
+				<input type="text" name="new_curso" placeholder="Curso">
+				<br>
+				<input type="text" name="new_duration" placeholder="Duración">
+				<br>
+				<input type="text" name="new_tec_useds" placeholder="Tecnologías usadas">
+				<br>
+				<textarea cols="36" rows="4" name="new_desc_project" placeholder="Descripcion del proyecto"></textarea>
+				<br>
+				<input type="date" name="new_date">
+				<br>
+				<input type="number" name="new_calification" placeholder="Calificación">
+			</ul>
 			<br>
 			<textarea name="comments" cols="40" rows="5">Comentarios de los profesores...</textarea>
 			<input id="btn" type="button" name="save_changes" value="Guardar Cambios" onclick="location='http://localhost/proyecto/Admin_area.html'">
